@@ -21,6 +21,8 @@ export const db = getFirestore(app);
 
 const google_provider = new GoogleAuthProvider();
 
+
+
 export const signInWithGoogle = () => {
   signInWithPopup(auth, google_provider).then((result) => {
     const name = result.user.displayName;
@@ -45,3 +47,4 @@ export const signOutWithGoogle = () => {
   signOut(auth);
   console.log("i signed out");
 }
+

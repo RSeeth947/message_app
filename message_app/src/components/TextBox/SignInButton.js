@@ -6,6 +6,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 
 import './TextBox.css'
 
+
+
 const SignInButton = () => {
     const [isUserSignedIn, setIsUserSignedIn] = useState("sign in");
   
@@ -13,10 +15,12 @@ const SignInButton = () => {
         if (user) {
         setIsUserSignedIn("sign out");
         
+        
         }
 
         else {
         setIsUserSignedIn("sign in");
+        
         
         }
 
@@ -27,5 +31,6 @@ const SignInButton = () => {
         <button onClick={isUserSignedIn === "sign in" ? signInWithGoogle : signOutWithGoogle}>{isUserSignedIn}</button>
     )
 };
+
 
 export default SignInButton;

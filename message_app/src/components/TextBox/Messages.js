@@ -24,7 +24,7 @@ const Messages = () => {
         <>
             {messages.map((message) => (
             <div key={message.id}>
-            <TextBox value={message.text} profileURL={localStorage.getItem('profile_pic')} />
+                <TextBox value={message.text} profileURL={localStorage.getItem('profile_pic')} />
             </div>
         ))}
         </>

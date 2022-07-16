@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase-config';
 
-import './SearchBar.css';
+import './ChatBar.css';
 
-const SearchBar = () => {
+const ChatBar = () => {
     
     const [inputText, setInputText] = useState('');
     
@@ -31,9 +31,9 @@ const SearchBar = () => {
     return (
         <div> 
             <input type='text' value={inputText} onChange={getChange}></input>
-            <button onClick={handleSubmit}>submit</button>
+            <button onClick={handleSubmit}>Send</button>
         </div>
     )
 };
 
-export default SearchBar;
+export default ChatBar;
