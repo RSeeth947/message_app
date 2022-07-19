@@ -7,9 +7,9 @@ const TextBox = (props) => {
 
     return (
         
-        <div className="text-box__container">
+        <div className="textbox_container">
             <img src={props.profileURL} alt=''/>
-            <div className="text-box__content">{props.value}</div>
+            <div className="textbox_content">{props.value}</div>
             
         </div>
     )

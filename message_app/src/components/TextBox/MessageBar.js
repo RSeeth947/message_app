@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase-config';
 
-import './ChatBar.css';
+import './MessageBar.css';
 
-const ChatBar = () => {
+const MessageBar = () => {
     
     const [inputText, setInputText] = useState('');
     
@@ -36,4 +36,4 @@ const ChatBar = () => {
     )
 };
 
-export default ChatBar;
+export default MessageBar;

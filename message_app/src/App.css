@@ -1,0 +1,38 @@
+h1 {
+    margin: 0;
+}
+
+
+.App {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-chatbar {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+
+.header {
+    background-color: pink;
+    padding: 1rem;
+}
+
+.messages-container {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.send-message-container {
+    background-color: lightblue;
+    padding: 1.3rem;
+}
+

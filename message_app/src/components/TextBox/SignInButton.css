@@ -1,0 +1,40 @@
+.google_button {
+   background-color: white;
+   color: black;
+   border: none;
+   height: 2rem;
+   width: 6rem;
+   text-decoration: none;
+   text-align: center;
+   border-radius: 4px;
+   font-size: 14px;
+   font-weight: normal;
+   font-family: 'Open Sans', sans-serif;
+   margin-left: 5px;
+   margin-top: 10px;
+}
+
+
+.google_button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+
+    
+
+#btn_content {
+    position: fixed;
+}
+#icon {
+    padding-right: 6px;
+}
+
+#button_content {
+    display: flex;
+    justify-content: center;
+    
+}
+  
+  
