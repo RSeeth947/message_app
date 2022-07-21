@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAFvuFUAxrKdL_JYpRp5GPF-0zevRrpP-4",
-  authDomain: "message-app-2a351.firebaseapp.com",
-  projectId: "message-app-2a351",
-  storageBucket: "message-app-2a351.appspot.com",
-  messagingSenderId: "756575664479",
-  appId: "1:756575664479:web:2fd430d8edca6e64651eea",
-  measurementId: "G-SFCHQ45X2C"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 

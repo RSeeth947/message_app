@@ -1,0 +1,50 @@
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: #353535;
+    border-radius: 5px;
+    color: #EEEEEE;
+    height: 2.5rem;
+}
+
+button {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    height: 2.5rem;
+    width: 6.5rem;
+    border-radius: 5px;
+    background-color: #2F65A7;
+    color: #EEEEEE;
+}
+
+button:hover {
+    background-color: #2f55a7;
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.input-container {
+    display: flex;
+    padding: 5px;
+}
+
+.input-field {
+    padding-left: 20px;
+    outline: none;
+    flex-grow: 1;
+
+}
+
+.input-field-wrapper {
+    padding-right: 10px;
+    flex-grow: 1;
+    display: flex;
+}

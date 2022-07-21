@@ -6,7 +6,7 @@
    width: 6rem;
    text-decoration: none;
    text-align: center;
-   border-radius: 4px;
+   border-radius: 5px;
    font-size: 14px;
    font-weight: normal;
    font-family: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@
 
 .google_button:hover {
     background-color: black;
-    color: white;
+    color: #EEEEEE;
     transition: 0.2s;
 }
 

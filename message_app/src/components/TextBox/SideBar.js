@@ -6,7 +6,9 @@ const SideBar = () => {
 
     return (
         <div className='sidebar'>
-            <SignInButton />
+            <div className='sign-in-button'>
+                <SignInButton />
+            </div>
         </div> 
 
 

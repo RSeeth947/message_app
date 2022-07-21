@@ -1,6 +1,9 @@
 h1 {
     margin: 0;
+    color: #EEEEEE;
 }
+
+
 
 
 .App {
@@ -22,17 +25,24 @@ h1 {
 
 
 .header {
-    background-color: pink;
+    background-color: #424242;
     padding: 1rem;
 }
 
 .messages-container {
-    flex: 1;
-    padding: 0.5rem;
+    background-color: #424242;
+    border-top: 1px solid #FFD369;
+    border-bottom: 1px solid #FFD369;
+    height: 100%;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+    
+  
 }
 
 .send-message-container {
-    background-color: lightblue;
-    padding: 1.3rem;
+    background-color: #424242;
+    padding: 1.4rem;
 }
 

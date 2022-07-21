@@ -1,0 +1,58 @@
+.textbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-content-container {
+    display: flex;
+}
+
+.right-container, .left-container  {
+    border-radius: 10px;
+    padding: 0.5em;
+    height: auto;
+}
+
+
+.left-container {
+    background-color: #023047;
+}
+
+.right-container {
+    background-color: #ffb703;
+}
+
+.left-textbox-content {
+    color: #EEEEEE;
+}
+
+.right-textbox-content {
+    color: #252323;
+}
+
+.right-textbox-photo, .left-textbox-photo {
+    border-radius: 50%;
+    max-width: 3em;
+    height: auto;
+    align-items: flex-end;
+    padding-right: 5px;
+}
+
+.right-textbox-photo {
+    display: none;
+}
+
+.right-textbox-name  {
+    display: none;
+}
+
+
+
+.left-textbox-name {
+    padding-bottom: 5px;
+    color: #EEEEEE;
+}
+
+
+
+

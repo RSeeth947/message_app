@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {  collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import TextBox from './TextBox'
 import { db } from '../../firebase-config';
+import './Messages.css'
 
 
 
@@ -21,13 +22,15 @@ const Messages = () => {
   }, []);
 
     return (
-        <>
+        <div className='message-container'>
             {messages.map((message) => (
-            <div key={message.id}>
-                <TextBox value={message.text} profileURL={localStorage.getItem('profile_pic')} />
+
+            
+            <div className={message.uid === localStorage.getItem('uid') ? 'right-message': 'left-message'}  key={message.id}>
+                <TextBox className="textbox" value={message.text} profileURL={localStorage.getItem('profile_pic')} name={localStorage.getItem('name')} position={message.uid === localStorage.getItem('uid') ? 'right-message': 'left-message'} />
             </div>
         ))}
-        </>
+        </div>
         
     )
 };

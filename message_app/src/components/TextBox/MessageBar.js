@@ -28,10 +28,15 @@ const MessageBar = () => {
 }
 
     
+
     return (
-        <div> 
-            <input type='text' value={inputText} onChange={getChange}></input>
-            <button onClick={handleSubmit}>Send</button>
+        <div className='input-container'> 
+            <div className='input-field-wrapper'>
+                <input className='input-field' type='text' value={inputText} onChange={getChange} placeholder="What's Poppin..."></input>
+            </div>
+            <div className='input-button-wrapper'>
+                <button className='input-button' onClick={handleSubmit}>Send</button>
+            </div>
         </div>
     )
 };
