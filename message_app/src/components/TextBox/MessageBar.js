@@ -1,25 +1,31 @@
 import React, { useState } from 'react';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
-import { db } from '../../firebase-config';
+import { db, auth } from '../../firebase-config';
 
 import './MessageBar.css';
+
+
 
 const MessageBar = () => {
     
     const [inputText, setInputText] = useState('');
     
-
     const getChange = (event) => {
         setInputText(event.target.value);
     }
+    const user = auth.currentUser;
+
+    const displayName = user.displayName;
+    const photoURL = user.photoURL;
 
     const handleSubmit = async (event) => {
         setInputText(inputText)
         const collectionRef = collection(db, "messages");
         const payLoad = {text: inputText,
                        timestamp: serverTimestamp(),
-                       photoURL: localStorage.getItem('profile_pic'),
-                       uid: localStorage.getItem('uid')};
+                       photoURL: photoURL,
+                       uid: localStorage.getItem('uid'),
+                       name: displayName};
         
         event.preventDefault();
 

@@ -2,7 +2,6 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from '@firebase/firestore';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 
-
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -22,7 +21,7 @@ export const db = getFirestore(app);
 const google_provider = new GoogleAuthProvider();
 
 
-
+  
 export const signInWithGoogle = () => {
   signInWithPopup(auth, google_provider).then((result) => {
     const name = result.user.displayName;
@@ -31,6 +30,8 @@ export const signInWithGoogle = () => {
     const uid = result.user.uid;
     
     console.log(result);
+    
+    
 
     localStorage.setItem('name', name);
     localStorage.setItem('email', email);
@@ -43,8 +44,10 @@ export const signInWithGoogle = () => {
 
 }
 
+
 export const signOutWithGoogle = () => {
   signOut(auth);
   console.log("i signed out");
 }
+
 

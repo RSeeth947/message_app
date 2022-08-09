@@ -27,7 +27,7 @@ const Messages = () => {
 
             
             <div className={message.uid === localStorage.getItem('uid') ? 'right-message': 'left-message'}  key={message.id}>
-                <TextBox className="textbox" value={message.text} profileURL={localStorage.getItem('profile_pic')} name={localStorage.getItem('name')} position={message.uid === localStorage.getItem('uid') ? 'right-message': 'left-message'} />
+                <TextBox className="textbox" value={message.text} profileURL={message.photoURL} name={message.name} position={message.uid === localStorage.getItem('uid') ? 'right-message': 'left-message'} />
             </div>
         ))}
         </div>
